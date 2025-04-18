@@ -1,3 +1,4 @@
+-- Database Design for Green Sprout Organics
 CREATE DATABASE IF NOT EXISTS GreenSproutOrganicsDB;
 USE GreenSproutOrganicsDB;
 
