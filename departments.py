@@ -5,20 +5,6 @@ from datetime import datetime, timedelta
 import time
 from mysql.connector import Error
 
-def create_connection():
-    try:
-        conn = mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='Augengneiss@8189',
-            database='greensproutorganicsdb',
-        )
-        print("MySQL connection established")
-        return conn
-    except Error as e:
-        print(f"Error connecting to MySQL: {e}")
-        return None
-
 def create_departments(conn):
     if not conn:
         print("No database connection")
